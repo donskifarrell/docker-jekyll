@@ -53,4 +53,9 @@ RUN \
   docker-helper cleanup
 
 WORKDIR /srv/jekyll
+
+
+# Add volumes for MySQL 
+VOLUME  ["/var/www/jekyll"]
+
 EXPOSE 4000
